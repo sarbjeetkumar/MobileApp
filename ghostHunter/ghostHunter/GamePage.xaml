@@ -24,9 +24,27 @@
             <TextBlock x:Name="tblScore" Text="Stage 1" HorizontalAlignment="Stretch" Foreground="Black"
                     TextAlignment="Left"  ></TextBlock>
         </StackPanel>
-        
-       
-        
+
+
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+
 
     </Grid>
 </Page>

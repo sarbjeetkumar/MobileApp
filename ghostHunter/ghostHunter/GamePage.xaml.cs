@@ -32,7 +32,8 @@ namespace ghostHunter
 
         //GamePage ge;
 
-        private GreenGhost ge = new GreenGhost();
+        public static GreenGhost gGhost = new GreenGhost();
+        public static RedGhost rGhost = new RedGhost();
 
         //get the random image first and
         public void createImage()
@@ -44,24 +45,34 @@ namespace ghostHunter
 
             Random ran = new Random();
 
-             int randomNumber =  ran.Next(0 , 5);
+             int randomNumber =  ran.Next(1 , 2);
+
+            int randomX = ran.Next(0 , 6);
+            int randomY = ran.Next(0, 6);
+
 
             switch (randomNumber)
             {
                 case 1:
                     if (randomNumber == 1)
                     {
-                        gameGrid.Children.Add(ge.getImage());
+                        //gameGrid.Children.Add(ge.getImage());
+                        gGhost.getImage().SetValue(Grid.RowProperty,randomX);
+                        gGhost.getImage().SetValue(Grid.ColumnProperty,randomY);
+                        gameGrid.Children.Add(gGhost.getImage());
                     }
                     break;
                 case 2:
                     if (randomNumber == 2)
                     {
                         //getFinalImage();
-                        gameGrid.Children.Add(ge.getImage());
+                        //gameGrid.Children.Add(ge.getImage());
+                        rGhost.getImage().SetValue(Grid.RowProperty, randomX);
+                        rGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
+                        gameGrid.Children.Add(rGhost.getImage());
                     }
                     break;
-                case 3:
+               /* case 3:
                     if (randomNumber == 3)
                     {
                         //call the ghost
@@ -74,21 +85,27 @@ namespace ghostHunter
                     {
                         //call the ghost 
                         // getFinalImage();
-                        gameGrid.Children.Add(ge.getImage());
+                       
+                        gameGrid.Children.Add(ge.getImage().SetValue(Grid.ColumnProperty, place));
                     }
-                    break;
+                    break;*/
             }
 
 
-        }//ends here 
+            /**
+             * 
+             *  es.getImage().SetValue(Grid.RowProperty, y);
+                es.getImage().SetValue(Grid.ColumnProperty, x);
+                 //add Slime to the grid
+                 grdGame.Children.Add(es.getImage(x));
+             * 
+             * 
+             * */
 
-       /* public Image getFinalImage()
-        {
 
-            //gameGrid.Children.Add(ge.getImage());
-            return null;
-           
-        }*/
+        }// method ends here 
+
+
 
 
 

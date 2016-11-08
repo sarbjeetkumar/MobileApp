@@ -8,18 +8,19 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace ghostHunter
 {
-    public class GreenGhost
+    public class RedGhost
     {
+
         //constructor 
-        public GreenGhost()
+        public RedGhost()
         {
 
         }
 
-        Image gGhost = new Image();
+        Image RGhost = new Image();
 
 
-        //create a two methods set image and get image 
+        //create methods set image and get image 
         //set image method will return a path to image and get image return a image .
 
 
@@ -28,7 +29,7 @@ namespace ghostHunter
             //path variale 
             String getPath;
 
-            getPath = "ms-appx:///Data/greenGhost.png";
+            getPath = "ms-appx:///Data/redGhost.png";
 
             return getPath;
         }
@@ -38,20 +39,23 @@ namespace ghostHunter
         public Image getImage()
         {
 
-            gGhost.Source = new BitmapImage(new Uri(setImage()));
+            RGhost.Source = new BitmapImage(new Uri(setImage()));
 
-            return gGhost;
+            return RGhost;
         }
 
-        
+
 
         //set image at random place 
         public void setImageAtRandomPlace(int placeOfImage)
         {
-            
-            
+
+
 
         }
+
+
+
 
 
 

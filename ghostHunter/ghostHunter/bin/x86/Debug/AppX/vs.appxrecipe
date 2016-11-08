@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-02T21:31:38.979</Modified>
+      <Modified>2016-11-08T20:50:46.827</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ghostHunter.exe">
       <PackagePath>entrypoint\ghostHunter.exe</PackagePath>
-      <Modified>2016-11-02T21:31:37.818</Modified>
+      <Modified>2016-11-08T20:50:46.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -516,7 +516,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ghostHunter.xr.xml">
       <PackagePath>ghostHunter.xr.xml</PackagePath>
-      <Modified>2016-11-02T21:04:58.541</Modified>
+      <Modified>2016-11-08T20:46:24.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -525,11 +525,11 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-02T21:05:00.751</Modified>
+      <Modified>2016-11-08T20:46:29.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\ghostHunter.exe">
       <PackagePath>ghostHunter.exe</PackagePath>
-      <Modified>2016-11-02T21:31:38.967</Modified>
+      <Modified>2016-11-08T20:50:46.820</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
