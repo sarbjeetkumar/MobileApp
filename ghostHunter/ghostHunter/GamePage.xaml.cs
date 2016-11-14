@@ -60,6 +60,7 @@ namespace ghostHunter
                         gGhost.getImage().SetValue(Grid.RowProperty,randomX);
                         gGhost.getImage().SetValue(Grid.ColumnProperty,randomY);
                         gameGrid.Children.Add(gGhost.getImage());
+                        gGhost = new GreenGhost();
                     }
                     break;
                 case 2:
@@ -67,9 +68,16 @@ namespace ghostHunter
                     {
                         //getFinalImage();
                         //gameGrid.Children.Add(ge.getImage());
+
+                        gGhost.getImage().SetValue(Grid.RowProperty, randomX);
+                        gGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
+                        gameGrid.Children.Add(gGhost.getImage());
+                        gGhost = new GreenGhost();
+
+                        /*
                         rGhost.getImage().SetValue(Grid.RowProperty, randomX);
                         rGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
-                        gameGrid.Children.Add(rGhost.getImage());
+                        gameGrid.Children.Add(rGhost.getImage());*/
                     }
                     break;
                /* case 3:

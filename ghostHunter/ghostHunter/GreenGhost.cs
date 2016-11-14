@@ -15,20 +15,40 @@ namespace ghostHunter
         //https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.input.tappedeventhandler
 
 
-        //constructor 
-        public GreenGhost()
-        {
-            taps = 1;
 
-        }
 
         Image gGhost = new Image();
         private int taps;
 
+        //constructor 
+        public GreenGhost()
+        {
+            taps = 1;
+            // redSlime.Tapped += RedSlime_Tapped;
+            gGhost.Tapped += GGhost_Tapped;
+        }
+
+        private void GGhost_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            //throw new NotImplementedException();
+            if (taps != 0)
+            {
+                //do something
+                taps--;
+            }
+            if (taps == 0)
+            {
+                //create a diffrent image which shows ghost died 
+                //call some method to change the image with death image
+                getFinalKillImage();
+
+            }
+        }
 
 
-        //create a tap event to kill the ghost
-        public void GreenGhost_Tap(Object sender , Windows.UI.Xaml.Input.TappedEventHandler e)
+
+      /*  //create a tap event to kill the ghost
+        public void GreenGhost_Tapped(Object sender , Windows.UI.Xaml.Input.TappedEventHandler e)
         {
             if (taps != 0)
             {
@@ -37,13 +57,29 @@ namespace ghostHunter
            if (taps == 0)
            {
                 //create a diffrent image which shows ghost died 
-                //call some method to change the image with death image 
+                //call some method to change the image with death image
+                getFinalKillImage();
+                 
            }
         }
+        */
+
+        //create a method which return a image source to replace a image on the screen 
+        public string getKillImage()
+        {
+            //absolutye path
+            string imagePath = "ms-appx:///Data/ghostDied.png";
+            return imagePath;
 
 
+        }
 
-
+        //Method to get a image path 
+        public Image getFinalKillImage()
+        {
+            gGhost.Source = new BitmapImage(new Uri(getKillImage()));
+            return gGhost;
+        }
 
 
 
