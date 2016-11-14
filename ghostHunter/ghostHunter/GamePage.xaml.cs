@@ -100,16 +100,7 @@ namespace ghostHunter
             }
 
 
-            /**
-             * 
-             *  es.getImage().SetValue(Grid.RowProperty, y);
-                es.getImage().SetValue(Grid.ColumnProperty, x);
-                 //add Slime to the grid
-                 grdGame.Children.Add(es.getImage(x));
-             * 
-             * 
-             * */
-
+           
 
         }// method ends here 
 

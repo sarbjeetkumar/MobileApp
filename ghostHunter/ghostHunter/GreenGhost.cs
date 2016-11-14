@@ -24,7 +24,7 @@ namespace ghostHunter
         public GreenGhost()
         {
             taps = 1;
-            // redSlime.Tapped += RedSlime_Tapped;
+            
             gGhost.Tapped += GGhost_Tapped;
         }
 
@@ -46,23 +46,6 @@ namespace ghostHunter
         }
 
 
-
-      /*  //create a tap event to kill the ghost
-        public void GreenGhost_Tapped(Object sender , Windows.UI.Xaml.Input.TappedEventHandler e)
-        {
-            if (taps != 0)
-            {
-                //do something
-            }
-           if (taps == 0)
-           {
-                //create a diffrent image which shows ghost died 
-                //call some method to change the image with death image
-                getFinalKillImage();
-                 
-           }
-        }
-        */
 
         //create a method which return a image source to replace a image on the screen 
         public string getKillImage()
