@@ -10,13 +10,42 @@ namespace ghostHunter
 {
     public class GreenGhost
     {
+
+        //Refrences 
+        //https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.input.tappedeventhandler
+
+
         //constructor 
         public GreenGhost()
         {
+            taps = 1;
 
         }
 
         Image gGhost = new Image();
+        private int taps;
+
+
+
+        //create a tap event to kill the ghost
+        public void GreenGhost_Tap(Object sender , Windows.UI.Xaml.Input.TappedEventHandler e)
+        {
+            if (taps != 0)
+            {
+                //do something
+            }
+           if (taps == 0)
+           {
+                //create a diffrent image which shows ghost died 
+                //call some method to change the image with death image 
+           }
+        }
+
+
+
+
+
+
 
 
         //create a two methods set image and get image 
