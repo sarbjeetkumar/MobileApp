@@ -26,24 +26,67 @@ namespace ghostHunter
         public GamePage()
         {
             this.InitializeComponent();
-            createImage();
+            createGhostOnGrid();
         }
-
-
-        //GamePage ge;
 
         public static GreenGhost gGhost = new GreenGhost();
         public static RedGhost rGhost = new RedGhost();
 
+        public static int score = 0;
+        int maximumGhosts = 4;
+        int minimumGhosts = 1;
+
+
+       Random ran = new Random();
+        //Steps
+        /**
+         * 
+         * 1 Create a game class 
+         * Create a rows and colunms in the grid
+         * bring the picture at grid
+         * bring the picture at random place 
+         * create a tap event 
+         * update a score if tapped 
+         * and clear the grid and get another ghost on the grid 
+         * and get a random ghosts from diffrent classes 
+         * create a ghost on screen and clear it at y time 
+         * set the timer to arrange the ghosts coming on the screen
+         * now call that createGhostOnGrid() after every 2 seconds or set a timer
+         * 
+         * 
+         * 
+         */
         //get the random image first and
-        public void createImage()
+
+
+        //create a method which calls the create ghost method in y times and clear the grid 
+        public void createGhostOnGrid()
+        {
+
+            //create a random number of enimes 
+            int maxGhosts = ran.Next(minimumGhosts , maximumGhosts);
+
+            //call the createGhost method and clear the grid before you create anythong on the grid
+            gameGrid.Children.Clear();
+
+            for (int j = 0; j<maxGhosts; j++)
+            {
+                createGhost();
+            }
+
+        }
+
+
+
+
+        public void createGhost()
         {
 
             //create a random number first
             //take use that random number to select random picture
             //throw it on the grid
 
-            Random ran = new Random();
+          
 
              int randomNumber =  ran.Next(1 , 2);
 

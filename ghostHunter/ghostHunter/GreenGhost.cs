@@ -13,6 +13,7 @@ namespace ghostHunter
 
         //Refrences 
         //https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.input.tappedeventhandler
+        //https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.image.source.aspx
 
 
 
@@ -34,7 +35,7 @@ namespace ghostHunter
             if (taps != 0)
             {
                 //do something
-                taps--;
+                taps--;GamePage.score += 10;
             }
             if (taps == 0)
             {

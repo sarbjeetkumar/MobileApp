@@ -12,7 +12,7 @@
             <ImageBrush Stretch="Fill" ImageSource="Data/foBack2.jpg"/>
         </Grid.Background>
 
-        <TextBlock x:Name="tblStage" Text="Stage 1" Margin="0,20,0,0" HorizontalAlignment="Stretch" Foreground="Black"
+        <TextBlock x:Name="tblStage" Text="Stage " Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Black"
                     TextAlignment="Center"  ></TextBlock>
 
        
@@ -21,7 +21,7 @@
 
         <StackPanel x:Name="ScoreStackPannel" Margin="0,30,0,0" >
 
-            <TextBlock x:Name="tblScore" Text="Stage 1" HorizontalAlignment="Stretch" Foreground="Black"
+            <TextBlock x:Name="tblScore" Text="Score " HorizontalAlignment="Left" Foreground="Black"
                     TextAlignment="Left"  ></TextBlock>
         </StackPanel>
 
