@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Threading;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -26,7 +27,8 @@ namespace ghostHunter
         public GamePage()
         {
             this.InitializeComponent();
-            createGhostOnGrid();
+            //createGhostOnGrid();
+            callCreateGhost();
         }
 
         public static GreenGhost gGhost = new GreenGhost();
@@ -37,7 +39,7 @@ namespace ghostHunter
         int minimumGhosts = 1;
 
 
-       Random ran = new Random();
+        Random ran = new Random();
         //Steps
         /**
          * 
@@ -51,12 +53,32 @@ namespace ghostHunter
          * and get a random ghosts from diffrent classes 
          * create a ghost on screen and clear it at y time 
          * set the timer to arrange the ghosts coming on the screen
-         * now call that createGhostOnGrid() after every 2 seconds or set a timer
+         * now call that createGhostOnGrid() after every 2 seconds or set a timer and clear the grid as well
+         * 
          * 
          * 
          * 
          */
         //get the random image first and
+
+        //create a method to call createGhostOngrid method after every z(Some 2 seconds ) time
+
+        public async void callCreateGhost()
+        {
+            int mseconds;
+            Random random = new Random();
+            mseconds = random.Next(3, 10) * 1000;
+            // Thread.Sleep(mseconds);
+
+            for (int j = 0; j<5;j++) {
+
+                createGhostOnGrid();
+
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2));
+            }
+        }
+
+    
 
 
         //create a method which calls the create ghost method in y times and clear the grid 
