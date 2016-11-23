@@ -15,7 +15,11 @@ using Windows.UI.Xaml.Navigation;
 using System.Threading;
 
 
+
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+//refrence 
+//https://msdn.microsoft.com/en-us/library/system.windows.threading.dispatcher(v=vs.110).aspx
 
 namespace ghostHunter
 {
@@ -28,7 +32,22 @@ namespace ghostHunter
         {
             this.InitializeComponent();
             //createGhostOnGrid();
+            
+            Timer = new DispatcherTimer();
+            Timer.Interval = TimeSpan.FromMilliseconds(recallTimer);
+            Timer.Tick += Timer_Tick;
+            startGame();
+        }
+
+        public void startGame()
+        {
+            Timer.Start();
+        }
+
+        private void Timer_Tick(object sender, object e)
+        {
             callCreateGhost();
+            //throw new NotImplementedException();
         }
 
         public static GreenGhost gGhost = new GreenGhost();
@@ -37,7 +56,9 @@ namespace ghostHunter
         public static int score = 0;
         int maximumGhosts = 4;
         int minimumGhosts = 1;
-
+        private DispatcherTimer Timer;
+        double recallTimer = 2000; //seconds 
+       
 
         Random ran = new Random();
         //Steps
@@ -61,13 +82,24 @@ namespace ghostHunter
          */
         //get the random image first and
 
+
+        //create a method which call a create ghost fucntion after every 2 seconds 
+        public void init()
+        {
+
+            //create a timer 
+         
+
+
+        }
+
         //create a method to call createGhostOngrid method after every z(Some 2 seconds ) time
 
         public async void callCreateGhost()
         {
             int mseconds;
             Random random = new Random();
-            mseconds = random.Next(3, 10) * 1000;
+            mseconds = random.Next(1, 3) * 1000;
             // Thread.Sleep(mseconds);
 
             for (int j = 0; j<5;j++) {
