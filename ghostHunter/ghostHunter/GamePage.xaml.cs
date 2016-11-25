@@ -110,6 +110,7 @@ namespace ghostHunter
             }
 
             await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(4));
+            updateScore();
 
 
         }
@@ -214,7 +215,7 @@ namespace ghostHunter
         //update the score and put it on text boz
         public void updateScore()
         {
-            //tblScore.Text = "Score " + score.ToString(); 
+            tblScore.Text = "Score " + score.ToString(); 
 
         }
 

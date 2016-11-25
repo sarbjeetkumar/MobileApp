@@ -35,7 +35,8 @@ namespace ghostHunter
             if (taps != 0)
             {
                 //do something
-                taps--;GamePage.score += 10;
+                taps--;
+                GamePage.score += 10;
             }
             if (taps == 0)
             {

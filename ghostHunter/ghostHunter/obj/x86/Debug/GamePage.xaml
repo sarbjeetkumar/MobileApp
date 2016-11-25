@@ -20,18 +20,27 @@
                     TextAlignment="Right" Margin="400,25,10,0"  ></TextBlock>
     </StackPanel>-->
 
-    <Grid>
+    <Grid Background="Black">
         <StackPanel x:ConnectionId='1' Name="myStackPanel" Margin="20,20,20,20">
 
+            <StackPanel x:ConnectionId='2' x:Name="myScorePanel">
 
+
+                <TextBlock x:ConnectionId='4' x:Name="tblScore" Text="Score " HorizontalAlignment="Right" Foreground="White"
+                    TextAlignment="Right" Margin="200,25,10,0"  ></TextBlock>
+
+
+
+
+            </StackPanel>
 
 
 
         
 
-        <Grid x:ConnectionId='2' x:Name="gameGrid" 
+        <Grid x:ConnectionId='3' x:Name="gameGrid" 
               Height="500"
-            	BorderBrush="Red"
+            	BorderBrush="Black"
             	BorderThickness="8" Margin="0,30,10,0">
     
          <Grid.Background>
