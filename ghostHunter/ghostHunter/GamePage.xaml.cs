@@ -57,7 +57,7 @@ namespace ghostHunter
         int maximumGhosts = 4;
         int minimumGhosts = 1;
         private DispatcherTimer Timer;
-        double recallTimer = 2000; //seconds 
+        double recallTimer = 5000; //seconds 
        
 
         Random ran = new Random();
@@ -97,17 +97,21 @@ namespace ghostHunter
 
         public async void callCreateGhost()
         {
-            int mseconds;
+           
             Random random = new Random();
-            mseconds = random.Next(1, 3) * 1000;
+            
             // Thread.Sleep(mseconds);
 
-            for (int j = 0; j<5;j++) {
+            for (int j = 0; j<4;j++) {
 
                 createGhostOnGrid();
 
-                await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2));
+                
             }
+
+            await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(4));
+
+
         }
 
     
@@ -131,6 +135,8 @@ namespace ghostHunter
         }
 
 
+
+        
 
 
         public void createGhost()
@@ -203,6 +209,14 @@ namespace ghostHunter
 
 
 
+
+
+        //update the score and put it on text boz
+        public void updateScore()
+        {
+            //tblScore.Text = "Score " + score.ToString(); 
+
+        }
 
 
 

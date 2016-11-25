@@ -346,6 +346,9 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\ghost2.png">
       <PackagePath>Data\ghost2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\RedBloodSplash.png">
+      <PackagePath>Data\RedBloodSplash.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\redGhost.png">
       <PackagePath>Data\redGhost.png</PackagePath>
     </AppxPackagedFile>

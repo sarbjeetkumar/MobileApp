@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-23T12:55:28.692</Modified>
+      <Modified>2016-11-24T23:58:07.601</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ghostHunter.exe">
       <PackagePath>entrypoint\ghostHunter.exe</PackagePath>
-      <Modified>2016-11-23T12:55:28.320</Modified>
+      <Modified>2016-11-24T23:58:04.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -464,6 +464,10 @@
       <PackagePath>Data\ghost2.png</PackagePath>
       <Modified>2016-10-25T18:10:51.754</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\RedBloodSplash.png">
+      <PackagePath>Data\RedBloodSplash.png</PackagePath>
+      <Modified>2016-11-23T23:38:00.030</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\redGhost.png">
       <PackagePath>Data\redGhost.png</PackagePath>
       <Modified>2016-10-25T18:10:51.775</Modified>
@@ -516,7 +520,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ghostHunter.xr.xml">
       <PackagePath>ghostHunter.xr.xml</PackagePath>
-      <Modified>2016-11-08T20:46:24.726</Modified>
+      <Modified>2016-11-24T23:52:37.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -525,11 +529,11 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-21T21:58:34.009</Modified>
+      <Modified>2016-11-24T23:58:07.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\ghostHunter.exe">
       <PackagePath>ghostHunter.exe</PackagePath>
-      <Modified>2016-11-23T12:55:28.688</Modified>
+      <Modified>2016-11-24T23:58:07.595</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

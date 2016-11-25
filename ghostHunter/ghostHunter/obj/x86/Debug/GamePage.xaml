@@ -7,24 +7,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:ConnectionId='1' x:Name="gameGrid">
-        <Grid.Background>
+
+
+    <!-- stack pannel for text boxes to show the score
+
+    <StackPanel x:Name="ScoreStackPannel" Margin="20,20,20,20" >
+
+        <TextBlock x:Name="tblStage" Text="Stage "  HorizontalAlignment="Center" Foreground="Black"
+                    TextAlignment="Center"   ></TextBlock>
+
+        <TextBlock x:Name="tblScore" Text="Score " HorizontalAlignment="Right" Foreground="Black"
+                    TextAlignment="Right" Margin="400,25,10,0"  ></TextBlock>
+    </StackPanel>-->
+
+    <Grid>
+        <StackPanel x:ConnectionId='1' Name="myStackPanel" Margin="20,20,20,20">
+
+
+
+
+
+        
+
+        <Grid x:ConnectionId='2' x:Name="gameGrid" 
+              Height="500"
+            	BorderBrush="Red"
+            	BorderThickness="8" Margin="0,30,10,0">
+    
+         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Data/foBack2.jpg"/>
         </Grid.Background>
-
-        <TextBlock x:ConnectionId='2' x:Name="tblStage" Text="Stage " Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Black"
-                    TextAlignment="Center"  ></TextBlock>
-
-       
-            
-        <!-- stack pannel for text boxes to show the score and later may be time as well-->
-
-        <StackPanel x:ConnectionId='3' x:Name="ScoreStackPannel" Margin="0,30,0,0" >
-
-            <TextBlock x:ConnectionId='4' x:Name="tblScore" Text="Score " HorizontalAlignment="Left" Foreground="Black"
-                    TextAlignment="Left"  ></TextBlock>
-        </StackPanel>
-
 
         <Grid.ColumnDefinitions >
             <ColumnDefinition />
@@ -34,18 +46,18 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+        </Grid>
 
 
-
-
+        </StackPanel>
     </Grid>
 </Page>
 

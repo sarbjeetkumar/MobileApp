@@ -116,6 +116,7 @@
     <Content Include="Data\frontAndBackgroundPic.jpg" />
     <Content Include="Data\greenGhost.png" />
     <Content Include="Data\ghost2.png" />
+    <Content Include="Data\RedBloodSplash.png" />
     <Content Include="Data\redGhost.png" />
     <Content Include="Data\blueGhost.png" />
     <Content Include="Data\ghostDied.png" />
