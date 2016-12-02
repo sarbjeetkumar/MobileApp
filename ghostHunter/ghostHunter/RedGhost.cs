@@ -40,6 +40,7 @@ namespace ghostHunter
         {
 
             RGhost.Source = new BitmapImage(new Uri(setImage()));
+            GamePage.countGhosts += 1;
 
             return RGhost;
         }

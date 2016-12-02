@@ -26,10 +26,12 @@
             <StackPanel x:Name="myScorePanel">
 
 
-                <TextBlock x:Name="tblScore" Text="Score " HorizontalAlignment="Right" Foreground="White"
-                    TextAlignment="Right" Margin="200,25,10,0"  ></TextBlock>
+                <TextBlock x:Name="tblScore" Text="Score ->  " HorizontalAlignment="Right" Foreground="White"
+                    TextAlignment="Right" Margin="200,0,0,0"  ></TextBlock>
 
 
+                <TextBlock x:Name="tblLife" Text="Remaining Life ->  " HorizontalAlignment="Center" Foreground="White"
+                    TextAlignment="Center" Margin="50,0,0,0"  ></TextBlock>
 
 
             </StackPanel>

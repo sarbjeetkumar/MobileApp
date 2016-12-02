@@ -36,7 +36,7 @@ namespace ghostHunter
             {
                 //do something
                 taps--;
-                GamePage.score += 10;
+                GamePage.score += 5;
             }
             if (taps == 0)
             {
@@ -87,7 +87,7 @@ namespace ghostHunter
 
         public Image getImage()
         {
-
+            
             gGhost.Source = new BitmapImage(new Uri(setImage()));
 
             return gGhost;

@@ -54,10 +54,12 @@ namespace ghostHunter
         public static RedGhost rGhost = new RedGhost();
 
         public static int score = 0;
-        int maximumGhosts = 4;
+        int maximumGhosts = 3;
         int minimumGhosts = 1;
         private DispatcherTimer Timer;
         double recallTimer = 5000; //seconds 
+        public static int waitTime = 4;
+        public static int countGhosts = 0;
        
 
         Random ran = new Random();
@@ -86,30 +88,29 @@ namespace ghostHunter
         //create a method which call a create ghost fucntion after every 2 seconds 
         public void init()
         {
-
-            //create a timer 
-         
+            //check score and do changes in game
+            //check for how many user missed 
+            //decide to continue or game over 
+           
 
 
         }
 
-        //create a method to call createGhostOngrid method after every z(Some 2 seconds ) time
-
+        //create a method to call createGhostOngrid method after every x(Some 2 seconds ) time
         public async void callCreateGhost()
         {
            
-            Random random = new Random();
-            
-            // Thread.Sleep(mseconds);
+    
 
-            for (int j = 0; j<4;j++) {
+            for (int j = 0; j<3;j++) {
 
+               
                 createGhostOnGrid();
 
                 
             }
 
-            await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(4));
+            await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(waitTime));
             updateScore();
 
 
@@ -126,29 +127,37 @@ namespace ghostHunter
             int maxGhosts = ran.Next(minimumGhosts , maximumGhosts);
 
             //call the createGhost method and clear the grid before you create anythong on the grid
+            
             gameGrid.Children.Clear();
 
             for (int j = 0; j<maxGhosts; j++)
             {
                 createGhost();
+              
+               
             }
+           
+        }//ends here 
 
+
+        public void ghostcount()
+        {
+            countGhosts = +1;
+            tblLife.Text = " Life - " + countGhosts.ToString();
         }
-
-
-
         
 
 
         public void createGhost()
         {
+           
 
             //create a random number first
             //take use that random number to select random picture
             //throw it on the grid
 
-          
 
+           
              int randomNumber =  ran.Next(1 , 2);
 
             int randomX = ran.Next(0 , 6);
@@ -157,6 +166,7 @@ namespace ghostHunter
 
             switch (randomNumber)
             {
+                
                 case 1:
                     if (randomNumber == 1)
                     {
@@ -165,6 +175,7 @@ namespace ghostHunter
                         gGhost.getImage().SetValue(Grid.ColumnProperty,randomY);
                         gameGrid.Children.Add(gGhost.getImage());
                         gGhost = new GreenGhost();
+                       
                     }
                     break;
                 case 2:
@@ -177,6 +188,7 @@ namespace ghostHunter
                         gGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
                         gameGrid.Children.Add(gGhost.getImage());
                         gGhost = new GreenGhost();
+                       
 
                         /*
                         rGhost.getImage().SetValue(Grid.RowProperty, randomX);
