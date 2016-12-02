@@ -58,7 +58,7 @@ namespace ghostHunter
         int minimumGhosts = 1;
         private DispatcherTimer Timer;
         double recallTimer = 5000; //seconds 
-        public static int waitTime = 4;
+        public static int waitTime = 2;
         public static int countGhosts = 0;
        
 
@@ -100,17 +100,15 @@ namespace ghostHunter
         public async void callCreateGhost()
         {
            
-    
-
-            for (int j = 0; j<3;j++) {
-
-               
+            for (int j = 0; j<3;j++) { 
+                    
                 createGhostOnGrid();
+                await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(waitTime));
 
-                
             }
 
-            await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(waitTime));
+           
+
             updateScore();
 
 
@@ -127,50 +125,54 @@ namespace ghostHunter
             int maxGhosts = ran.Next(minimumGhosts , maximumGhosts);
 
             //call the createGhost method and clear the grid before you create anythong on the grid
-            
+           
+
             gameGrid.Children.Clear();
 
-            for (int j = 0; j<maxGhosts; j++)
+            for (int j = 1; j<maxGhosts; j++)
             {
                 createGhost();
-              
-               
+                System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2));
+
+
             }
-           
+
+
         }//ends here 
 
 
         public void ghostcount()
         {
-            countGhosts = +1;
-            tblLife.Text = " Life - " + countGhosts.ToString();
+
+            countGhosts = countGhosts + 1;
+            tblLife.Text = "Remaning Life  " + countGhosts.ToString();
         }
         
 
 
         public void createGhost()
         {
-           
+
 
             //create a random number first
             //take use that random number to select random picture
             //throw it on the grid
-
+            ghostcount();
 
            
              int randomNumber =  ran.Next(1 , 2);
 
-            int randomX = ran.Next(0 , 6);
-            int randomY = ran.Next(0, 6);
+            int randomX = ran.Next(1 , 5);
+            int randomY = ran.Next(1, 5);
 
-
+            
             switch (randomNumber)
             {
                 
                 case 1:
                     if (randomNumber == 1)
                     {
-                        //gameGrid.Children.Add(ge.getImage());
+                        
                         gGhost.getImage().SetValue(Grid.RowProperty,randomX);
                         gGhost.getImage().SetValue(Grid.ColumnProperty,randomY);
                         gameGrid.Children.Add(gGhost.getImage());
@@ -181,40 +183,17 @@ namespace ghostHunter
                 case 2:
                     if (randomNumber == 2)
                     {
-                        //getFinalImage();
-                        //gameGrid.Children.Add(ge.getImage());
 
                         gGhost.getImage().SetValue(Grid.RowProperty, randomX);
                         gGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
                         gameGrid.Children.Add(gGhost.getImage());
                         gGhost = new GreenGhost();
-                       
+                        
 
-                        /*
-                        rGhost.getImage().SetValue(Grid.RowProperty, randomX);
-                        rGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
-                        gameGrid.Children.Add(rGhost.getImage());*/
+
                     }
                     break;
-               /* case 3:
-                    if (randomNumber == 3)
-                    {
-                        //call the ghost
-                        // getFinalImage();
-                        gameGrid.Children.Add(ge.getImage());
-                    }
-                    break;
-                case 4:
-                    if (randomNumber == 4)
-                    {
-                        //call the ghost 
-                        // getFinalImage();
-                       
-                        gameGrid.Children.Add(ge.getImage().SetValue(Grid.ColumnProperty, place));
-                    }
-                    break;*/
             }
-
 
            
 
