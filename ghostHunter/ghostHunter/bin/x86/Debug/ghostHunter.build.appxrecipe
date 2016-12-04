@@ -334,11 +334,11 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\foBack2.jpg">
-      <PackagePath>Data\foBack2.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\aboutPage.png">
+      <PackagePath>Data\aboutPage.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\frontAndBackgroundPic.jpg">
-      <PackagePath>Data\frontAndBackgroundPic.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\blueGhost2.png">
+      <PackagePath>Data\blueGhost2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\greenGhost.png">
       <PackagePath>Data\greenGhost.png</PackagePath>
@@ -384,6 +384,12 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\foBack2.jpg">
+      <PackagePath>Data\foBack2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\frontAndBackgroundPic.jpg">
+      <PackagePath>Data\frontAndBackgroundPic.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

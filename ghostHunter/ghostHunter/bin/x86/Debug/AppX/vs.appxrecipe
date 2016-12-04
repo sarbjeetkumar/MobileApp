@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T14:57:44.642</Modified>
+      <Modified>2016-12-04T02:24:07.985</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ghostHunter.exe">
       <PackagePath>entrypoint\ghostHunter.exe</PackagePath>
-      <Modified>2016-12-02T14:57:44.227</Modified>
+      <Modified>2016-12-04T02:24:07.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,13 +448,13 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\foBack2.jpg">
-      <PackagePath>Data\foBack2.jpg</PackagePath>
-      <Modified>2016-10-25T18:10:51.606</Modified>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\aboutPage.png">
+      <PackagePath>Data\aboutPage.png</PackagePath>
+      <Modified>2016-12-03T13:25:38.009</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\frontAndBackgroundPic.jpg">
-      <PackagePath>Data\frontAndBackgroundPic.jpg</PackagePath>
-      <Modified>2016-10-25T18:10:51.706</Modified>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\blueGhost2.png">
+      <PackagePath>Data\blueGhost2.png</PackagePath>
+      <Modified>2016-12-03T13:26:24.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\greenGhost.png">
       <PackagePath>Data\greenGhost.png</PackagePath>
@@ -514,6 +514,14 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\foBack2.jpg">
+      <PackagePath>Data\foBack2.jpg</PackagePath>
+      <Modified>2016-10-25T18:10:51.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Data\frontAndBackgroundPic.jpg">
+      <PackagePath>Data\frontAndBackgroundPic.jpg</PackagePath>
+      <Modified>2016-10-25T18:10:51.706</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-10-25T18:08:38.604</Modified>
@@ -529,11 +537,11 @@
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T01:13:27.875</Modified>
+      <Modified>2016-12-04T02:12:50.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\Core\ghostHunter.exe">
       <PackagePath>ghostHunter.exe</PackagePath>
-      <Modified>2016-12-02T14:57:44.635</Modified>
+      <Modified>2016-12-04T02:24:07.979</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

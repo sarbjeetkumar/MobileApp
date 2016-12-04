@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BlueGhost.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -112,6 +113,8 @@
     <None Include="ghostHunter_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\aboutPage.png" />
+    <Content Include="Data\blueGhost2.png" />
     <Content Include="Data\foBack2.jpg" />
     <Content Include="Data\frontAndBackgroundPic.jpg" />
     <Content Include="Data\greenGhost.png" />

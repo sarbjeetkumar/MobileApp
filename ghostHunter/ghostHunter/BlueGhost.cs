@@ -8,21 +8,21 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace ghostHunter
 {
-    public class RedGhost
+     public class BlueGhost
     {
 
-        Image rGhost = new Image();
+        Image bGhost = new Image();
         private int taps;
 
         //constructor 
-        public RedGhost()
+        public BlueGhost()
         {
-            taps = 2;
+            taps = 1;
 
-            rGhost.Tapped += RGhost_Tapped;
+            bGhost.Tapped += BGhost_Tapped;
         }
 
-        private void RGhost_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        private void BGhost_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             //throw new NotImplementedException();
             if (taps != 0)
@@ -55,8 +55,8 @@ namespace ghostHunter
         //Method to get a image path 
         public Image getFinalKillImage()
         {
-            rGhost.Source = new BitmapImage(new Uri(getKillImage()));
-            return rGhost;
+            bGhost.Source = new BitmapImage(new Uri(getKillImage()));
+            return bGhost;
         }
 
 
@@ -71,7 +71,7 @@ namespace ghostHunter
             //path variale 
             String getPath;
 
-            getPath = "ms-appx:///Data/redGhost.png";
+            getPath = "ms-appx:///Data/blueGhost2.png";
 
             return getPath;
         }
@@ -81,14 +81,14 @@ namespace ghostHunter
         public Image getImage()
         {
 
-            rGhost.Source = new BitmapImage(new Uri(setImage()));
+            bGhost.Source = new BitmapImage(new Uri(setImage()));
 
-            return rGhost;
+            return bGhost;
         }
 
 
 
+       
 
-
-    }//class 
+    }
 }

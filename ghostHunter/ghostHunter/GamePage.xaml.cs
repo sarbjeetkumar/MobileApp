@@ -52,6 +52,8 @@ namespace ghostHunter
 
         public static GreenGhost gGhost = new GreenGhost();
         public static RedGhost rGhost = new RedGhost();
+        public static BlueGhost bGhost = new BlueGhost();
+        public static WhiteGhost wGhost = new WhiteGhost();
 
         public static int score = 0;
         int maximumGhosts = 3;
@@ -160,40 +162,72 @@ namespace ghostHunter
             ghostcount();
 
            
-             int randomNumber =  ran.Next(1 , 2);
+             int randomNumber =  ran.Next(0 , 4);
 
-            int randomX = ran.Next(1 , 5);
-            int randomY = ran.Next(1, 5);
+            int randomX = ran.Next(1 , 6);
+            int randomY = ran.Next(1, 6);
 
             
             switch (randomNumber)
             {
                 
+                //if number 1 select Green Ghost Class 
                 case 1:
                     if (randomNumber == 1)
                     {
-                        
+
                         gGhost.getImage().SetValue(Grid.RowProperty,randomX);
                         gGhost.getImage().SetValue(Grid.ColumnProperty,randomY);
                         gameGrid.Children.Add(gGhost.getImage());
                         gGhost = new GreenGhost();
-                       
+
+
                     }
                     break;
                 case 2:
+                    //if number 2 select BlueGhost
                     if (randomNumber == 2)
                     {
 
-                        gGhost.getImage().SetValue(Grid.RowProperty, randomX);
-                        gGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
-                        gameGrid.Children.Add(gGhost.getImage());
-                        gGhost = new GreenGhost();
-                        
+                        bGhost.getImage().SetValue(Grid.RowProperty, randomX);
+                        bGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
+                        gameGrid.Children.Add(bGhost.getImage());
+                        bGhost = new BlueGhost();
+
 
 
                     }
                     break;
-            }
+                    //if number 3 select red ghost 
+                case 3:
+                    if (randomNumber == 3)
+                    {
+
+                        bGhost.getImage().SetValue(Grid.RowProperty, randomX);
+                        bGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
+                        gameGrid.Children.Add(rGhost.getImage());
+                        rGhost = new RedGhost();
+
+
+
+                    }
+                    break;
+                    //if number 4 select white ghost
+                case 4:
+                    if (randomNumber == 4)
+                    {
+
+                        bGhost.getImage().SetValue(Grid.RowProperty, randomX);
+                        bGhost.getImage().SetValue(Grid.ColumnProperty, randomY);
+                        gameGrid.Children.Add(wGhost.getImage());
+                        wGhost = new WhiteGhost();
+
+
+
+                    }
+                    break;
+
+            }//switch ends here
 
            
 
@@ -210,6 +244,15 @@ namespace ghostHunter
 
         }
 
+
+
+
+
+        //update the score 
+        public void updateStage()
+        {
+            //do some stuff to update the score 
+        }
 
 
     }//class

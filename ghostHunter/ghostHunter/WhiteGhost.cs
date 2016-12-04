@@ -8,21 +8,27 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace ghostHunter
 {
-    public class RedGhost
+    public class WhiteGhost
     {
+        //Refrences 
+        //https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.input.tappedeventhandler
+        //https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.image.source.aspx
 
-        Image rGhost = new Image();
+
+
+
+        Image wGhost = new Image();
         private int taps;
 
         //constructor 
-        public RedGhost()
+        public WhiteGhost()
         {
-            taps = 2;
+            taps = 1;
 
-            rGhost.Tapped += RGhost_Tapped;
+            wGhost.Tapped += WGhost_Tapped;
         }
 
-        private void RGhost_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        private void WGhost_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
             //throw new NotImplementedException();
             if (taps != 0)
@@ -55,8 +61,8 @@ namespace ghostHunter
         //Method to get a image path 
         public Image getFinalKillImage()
         {
-            rGhost.Source = new BitmapImage(new Uri(getKillImage()));
-            return rGhost;
+            wGhost.Source = new BitmapImage(new Uri(getKillImage()));
+            return wGhost;
         }
 
 
@@ -71,7 +77,7 @@ namespace ghostHunter
             //path variale 
             String getPath;
 
-            getPath = "ms-appx:///Data/redGhost.png";
+            getPath = "ms-appx:///Data/whiteGhost.png";
 
             return getPath;
         }
@@ -81,14 +87,14 @@ namespace ghostHunter
         public Image getImage()
         {
 
-            rGhost.Source = new BitmapImage(new Uri(setImage()));
+            wGhost.Source = new BitmapImage(new Uri(setImage()));
 
-            return rGhost;
+            return wGhost;
         }
 
 
 
 
 
-    }//class 
+    }//class ends here 
 }
