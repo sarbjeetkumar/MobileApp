@@ -19,7 +19,7 @@ In order to run the app you must first have Visual Studio [https://www.microsoft
 ####Download From Github
 
 ```
-Once all installation process is finished you have two option git clone the project from git hub or download zip.
+Once all installation process is finished you have two options git clone the project from git hub or download zip.
 ```
 
 ####Git Clone
