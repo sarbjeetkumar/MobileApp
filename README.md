@@ -9,7 +9,14 @@
 
 ####Needed Software
 
-In order to use the app you must first have Visual Studio [https://www.microsoftstore.com/store/mseea/en_IE/list/Visual-Studio/categoryID.66235600?s_kwcid=AL!4249!3!102590237356!e!!g!!download%20visual%20studio%202015&WT.mc_id=pointitsem+Google+Adwords+Visual+Studio+-+EN&ef_id=V959sAAAACQ4ovfT:20161205224757:s] once you have a visual studio downloaded.
+In order to run the app you must first have Visual Studio [https://www.microsoftstore.com/store/mseea/en_IE/list/Visual-Studio/categoryID.66235600?s_kwcid=AL!4249!3!102590237356!e!!g!!download%20visual%20studio%202015&WT.mc_id=pointitsem+Google+Adwords+Visual+Studio+-+EN&ef_id=V959sAAAACQ4ovfT:20161205224757:s] once you have a visual studio downloaded.
+
+
+####How to install Git in your device 
+```
+ Here is nice tutorial shows you how to install git in your device [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
+```
+
 
 
 ####Git Clone
@@ -26,4 +33,4 @@ In the main directory navigate to .sln and if you have needed software installed
 
 ##Wiki
 For extra information about the application please refer to the repository [Wiki](https://github.com/sarbjeetkumar/MobileApp/wiki). The
-[Wiki](https://github.com/sarbjeetkumar/MobileApp/wiki) contains information regarding the [App Architecture] [Code Explanation ] [Problem encountered] 
+[Wiki](https://github.com/sarbjeetkumar/MobileApp/wiki) contains information regarding the [App Architecture] [Code Explanation ] [Problem encountered] .
