@@ -16,7 +16,11 @@ In order to run the app you must first have Visual Studio [https://www.microsoft
 
  [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
 
+####Download From Github
 
+```
+Once all installation process is finished you have two option git clone the project from git hub or download zip.
+```
 
 ####Git Clone
 Once the required software is installed, you then need to git clone the master branch of the GoProject repository or download a zip file copy.
