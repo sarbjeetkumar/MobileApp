@@ -95,13 +95,7 @@ namespace ghostHunter
 
         
 
-        //set image at random place 
-        public void setImageAtRandomPlace(int placeOfImage)
-        {
-            
-            
-
-        }
+       
 
 
 

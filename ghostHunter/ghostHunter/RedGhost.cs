@@ -17,7 +17,7 @@ namespace ghostHunter
         //constructor 
         public RedGhost()
         {
-            taps = 2;
+            taps = 1;
 
             rGhost.Tapped += RGhost_Tapped;
         }

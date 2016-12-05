@@ -132,17 +132,21 @@ namespace ghostHunter.ghostHunter_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "ghostHunter.GamePage";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "ghostHunter.About";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ghostHunter.MainPage";
+            _typeNameTable[3] = "ghostHunter.GamePage";
+            _typeNameTable[4] = "ghostHunter.MainPage";
+            _typeNameTable[5] = "ghostHunter.ScorePage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::ghostHunter.GamePage);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::ghostHunter.About);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ghostHunter.MainPage);
+            _typeTable[3] = typeof(global::ghostHunter.GamePage);
+            _typeTable[4] = typeof(global::ghostHunter.MainPage);
+            _typeTable[5] = typeof(global::ghostHunter.ScorePage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +181,10 @@ namespace ghostHunter.ghostHunter_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_GamePage() { return new global::ghostHunter.GamePage(); }
-        private object Activate_3_MainPage() { return new global::ghostHunter.MainPage(); }
+        private object Activate_0_About() { return new global::ghostHunter.About(); }
+        private object Activate_3_GamePage() { return new global::ghostHunter.GamePage(); }
+        private object Activate_4_MainPage() { return new global::ghostHunter.MainPage(); }
+        private object Activate_5_ScorePage() { return new global::ghostHunter.ScorePage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +196,9 @@ namespace ghostHunter.ghostHunter_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ghostHunter.GamePage
+            case 0:   //  ghostHunter.About
                 userType = new global::ghostHunter.ghostHunter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_GamePage;
+                userType.Activator = Activate_0_About;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +211,23 @@ namespace ghostHunter.ghostHunter_XamlTypeInfo
                 xamlType = new global::ghostHunter.ghostHunter_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ghostHunter.MainPage
+            case 3:   //  ghostHunter.GamePage
                 userType = new global::ghostHunter.ghostHunter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_GamePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  ghostHunter.MainPage
+                userType = new global::ghostHunter.ghostHunter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  ghostHunter.ScorePage
+                userType = new global::ghostHunter.ghostHunter_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_ScorePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

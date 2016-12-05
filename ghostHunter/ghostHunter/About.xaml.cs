@@ -13,30 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ghostHunter
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class About : Page
     {
-        public MainPage()
+        public About()
         {
             this.InitializeComponent();
-        }
-
-        //navigate to game page 
-        private void btnStartGame_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(GamePage));
-
-        }
-
-        private void btnGameInfo_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(About));
         }
     }
 }

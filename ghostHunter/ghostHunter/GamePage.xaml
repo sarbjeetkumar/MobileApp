@@ -8,30 +8,22 @@
     mc:Ignorable="d">
 
 
-
-    <!-- stack pannel for text boxes to show the score
-
-    <StackPanel x:Name="ScoreStackPannel" Margin="20,20,20,20" >
-
-        <TextBlock x:Name="tblStage" Text="Stage "  HorizontalAlignment="Center" Foreground="Black"
-                    TextAlignment="Center"   ></TextBlock>
-
-        <TextBlock x:Name="tblScore" Text="Score " HorizontalAlignment="Right" Foreground="Black"
-                    TextAlignment="Right" Margin="400,25,10,0"  ></TextBlock>
-    </StackPanel>-->
-
     <Grid Background="Black">
         <StackPanel Name="myStackPanel" Margin="20,20,20,20">
 
             <StackPanel x:Name="myScorePanel">
 
 
-                <TextBlock x:Name="tblScore" Text="Score ->  " HorizontalAlignment="Right" Foreground="White"
-                    TextAlignment="Right" Margin="200,0,0,0"  ></TextBlock>
+                <TextBlock x:Name="tblScore" Text="Score  " HorizontalAlignment="Right" Foreground="White"
+                    TextAlignment="Right" Margin="200,5,0,0"  ></TextBlock>
 
 
-                <TextBlock x:Name="tblLife" Text="Remaining Life ->  " HorizontalAlignment="Center" Foreground="White"
-                    TextAlignment="Center" Margin="50,0,0,0"  ></TextBlock>
+                <TextBlock x:Name="tblLife" Text="Remaining Life  " HorizontalAlignment="Center" Foreground="White"
+                    TextAlignment="Center" Margin="20,0,0,0"  ></TextBlock>
+
+
+                <TextBlock x:Name="tblStage"  HorizontalAlignment="Left" Foreground="White"
+                    TextAlignment="Center" Text="Stage " Margin="10,-30,0,0"  ></TextBlock>
 
 
             </StackPanel>

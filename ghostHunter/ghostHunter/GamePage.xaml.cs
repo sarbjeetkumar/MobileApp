@@ -162,7 +162,7 @@ namespace ghostHunter
             ghostcount();
 
            
-             int randomNumber =  ran.Next(0 , 4);
+             int randomNumber =  ran.Next(0 , 5);
 
             int randomX = ran.Next(1 , 6);
             int randomY = ran.Next(1, 6);
@@ -252,6 +252,7 @@ namespace ghostHunter
         public void updateStage()
         {
             //do some stuff to update the score 
+             
         }
 
 

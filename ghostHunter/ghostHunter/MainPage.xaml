@@ -7,16 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--BMR-->
-
-    <!--<Page.Background>
-        <ImageBrush Stretch="Uniform" ImageSource="Data/frontAndBackgroundPic.jpg"/>
-    </Page.Background>
-    <Page.Foreground>
-        <ImageBrush Stretch="Fill"/>
-    </Page.Foreground>
-
-        -->
+    
 
     <Grid>
         <Grid.Background>
@@ -35,8 +26,8 @@
 
             </Button>
 
-            <Button x:Name="btnGameInfo" Background = "Transparent" Height="25" Width="140" Margin="20,20,0,0" Content="Info"
-                     VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="Red" BorderBrush="#FFE4DA04">
+            <Button x:Name="btnGameInfo" Background = "Transparent" Height="25" Width="140" Margin="20,20,0,0" Content="About"
+                     VerticalAlignment="Center"  HorizontalAlignment="Center" Foreground="Red" BorderBrush="#FFE4DA04" Click="btnGameInfo_Click">
 
             </Button>
 

@@ -195,3 +195,13 @@ C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\
 C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\GamePage.g.cs
 C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\GamePage.xaml
 C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\GamePage.xbf
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\About.xbf
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\About.g.i.cs
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\About.g.cs
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\About.xaml
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\About.xbf
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\bin\x86\Debug\ScorePage.xbf
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\ScorePage.g.i.cs
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\ScorePage.g.cs
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\ScorePage.xaml
+C:\Users\sarab singh\Desktop\4thYear\MobileApp3\ghostHunter\ghostHunter\obj\x86\Debug\ScorePage.xbf
