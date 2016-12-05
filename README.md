@@ -24,3 +24,6 @@ When the application is on your machine, navigate to the Visual Studio Solution 
 In the main directory navigate to .sln and if you have needed software installed you can fire it off by double clicking on (.sln) file.
 ```
 
+##Wiki
+For extra information about the application please refer to the repository [Wiki](https://github.com/sarbjeetkumar/MobileApp/wiki). The
+[Wiki](https://github.com/sarbjeetkumar/MobileApp/wiki) contains information regarding the [App Architecture] [Code Explanation ] [Problem encountered] 
