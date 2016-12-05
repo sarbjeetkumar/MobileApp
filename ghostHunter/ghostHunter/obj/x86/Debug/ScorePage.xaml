@@ -9,13 +9,26 @@
 
     <Grid>
 
+        
 
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Data/scorePage.png" Opacity="50"/>
         </Grid.Background>
 
+
+        <StackPanel>
         <TextBlock Margin="50,250,50,20" Text=" Your Score is " HorizontalAlignment="Center" Foreground="Black" FontWeight="Bold"
                     />
+
+            <TextBlock x:ConnectionId='3' x:Name="finalScore" HorizontalAlignment="Center" Foreground="Black" FontWeight="Bold"/>
+        </StackPanel>
+        
+        <StackPanel >
+            <Button x:ConnectionId='1' x:Name="backButton" Background="Red" FontStyle="Italic" Content="Strat Again"></Button>
+            <Button x:ConnectionId='2' x:Name="quitButton"                           Background="Red" FontStyle="Italic" Content="Quit"></Button>
+        </StackPanel>
+
+
 
 
     </Grid>

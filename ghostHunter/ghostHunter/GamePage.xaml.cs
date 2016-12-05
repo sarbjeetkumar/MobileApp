@@ -66,6 +66,7 @@ namespace ghostHunter
         double recallTimer = 5000; //seconds 
         public static int waitTime = 2;
         public static int countGhosts = 0;
+        int minScore = 30;
        
 
         Random ran = new Random();
@@ -83,12 +84,12 @@ namespace ghostHunter
          * create a ghost on screen and clear it at y time 
          * set the timer to arrange the ghosts coming on the screen
          * now call that createGhostOnGrid() after every 2 seconds or set a timer and clear the grid as well
-         * 
+         * create a score counter to end the game 
          * 
          * 
          * 
          */
-        //get the random image first and
+        
 
 
         //create a method which call a create ghost fucntion after every 2 seconds 
@@ -111,13 +112,31 @@ namespace ghostHunter
                 maximumGhosts = 5;
             }
 
-            if(score > 60 || countGhosts > 35)
+
+            else if (countGhosts > 30 && score < 50)
             {
                 //do something  
-                
+                Timer.Stop();
+
+
                 this.Frame.Navigate(typeof(ScorePage));
+
+
             }
-           
+
+            else if (countGhosts > 40 && score < 80)
+            {
+                //do something  
+                Timer.Stop();
+
+
+                this.Frame.Navigate(typeof(ScorePage));
+
+
+            }
+
+
+
 
 
         }
@@ -136,6 +155,7 @@ namespace ghostHunter
            
 
             updateScore();
+            updateStage();
 
 
         }
@@ -171,11 +191,11 @@ namespace ghostHunter
         {
 
             countGhosts = countGhosts + 1;
-            tblLife.Text = "Remaning Life  " + countGhosts.ToString();
+            int remainingLife = 50;
+            //tblLife.Text = "Remaning Life  " + countGhosts.ToString();
 
+          
             //calculate the remaining life
-
-
 
 
         }
@@ -282,7 +302,30 @@ namespace ghostHunter
         public void updateStage()
         {
             //do some stuff to update the score 
-            //tblStage.Text = ""+             
+            //tblStage.Text = ""+  
+            int stage = 1;
+            tblStage.Text = "Stage " + stage.ToString();
+            
+            if (score == 25)
+            {
+                stage = 1;
+                tblStage.Text = "Stage " + stage.ToString();
+            }
+            if (score > 30 )
+            {
+                stage = 2;
+                tblStage.Text = "Stage " + stage.ToString();
+            }
+            if (score > 50)
+            {
+                stage = 3;
+                tblStage.Text = "Stage " + stage.ToString();
+            }
+            if (score > 80)
+            {
+                stage = 4;
+                tblStage.Text = "Stage " + stage.ToString();
+            }
         }
 
 
