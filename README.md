@@ -13,9 +13,8 @@ In order to run the app you must first have Visual Studio [https://www.microsoft
 
 
 ####How to install Git in your device 
-```
- Here is nice tutorial shows you how to install git in your device [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
-```
+
+ [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git]
 
 
 
