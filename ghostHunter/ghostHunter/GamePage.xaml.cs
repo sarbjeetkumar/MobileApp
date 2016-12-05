@@ -54,10 +54,15 @@ namespace ghostHunter
 
         }
 
+        
+
         public static GreenGhost gGhost = new GreenGhost();
         public static RedGhost rGhost = new RedGhost();
         public static BlueGhost bGhost = new BlueGhost();
         public static WhiteGhost wGhost = new WhiteGhost();
+
+
+        // variables 
 
         public static int score = 0;
         int maximumGhosts = 3;
@@ -91,8 +96,7 @@ namespace ghostHunter
          */
         
 
-
-        //create a method which call a create ghost fucntion after every 2 seconds 
+        //init method check score and set min and max ghosts on the screen  
         public  void init()
         {
             //check score and do changes in game
@@ -136,9 +140,6 @@ namespace ghostHunter
             }
 
 
-
-
-
         }
 
         //create a method to call createGhostOngrid method after every x(Some 2 seconds ) time
@@ -152,15 +153,11 @@ namespace ghostHunter
 
             }
 
-           
-
             updateScore();
             updateStage();
 
 
         }
-
-    
 
 
         //create a method which calls the create ghost method in y times and clear the grid 
@@ -172,8 +169,7 @@ namespace ghostHunter
 
             //call the createGhost method and clear the grid before you create anythong on the grid
            
-
-            gameGrid.Children.Clear();
+           gameGrid.Children.Clear();
 
             for (int j = 1; j<maxGhosts; j++)
             {
@@ -183,32 +179,21 @@ namespace ghostHunter
 
             }
 
-
         }//ends here 
 
-
+        //counting how many ghost appearing on the screen
         public void ghostcount()
         {
 
             countGhosts = countGhosts + 1;
-            int remainingLife = 50;
             //tblLife.Text = "Remaning Life  " + countGhosts.ToString();
-
-          
-            //calculate the remaining life
-
 
         }
         
 
-
+        //create a ghost on the screen 
         public void createGhost()
         {
-
-
-            //create a random number first
-            //take use that random number to select random picture
-            //throw it on the grid
             ghostcount();
 
            
@@ -298,7 +283,7 @@ namespace ghostHunter
 
 
 
-        //update the score 
+        //update the stage 
         public void updateStage()
         {
             //do some stuff to update the score 

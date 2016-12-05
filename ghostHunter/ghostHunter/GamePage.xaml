@@ -18,7 +18,7 @@
                     TextAlignment="Right" Margin="200,5,0,0"  ></TextBlock>
 
 
-                <TextBlock x:Name="tblLife" Text="Remaining Life  " HorizontalAlignment="Center" Foreground="White"
+                <TextBlock x:Name="tblLife"  HorizontalAlignment="Center" Foreground="White"
                     TextAlignment="Center" Margin="20,0,0,0"  ></TextBlock>
 
 
