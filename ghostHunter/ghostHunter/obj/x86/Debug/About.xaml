@@ -14,13 +14,13 @@
         </Grid.Background>
 
         <StackPanel>
-            <Button x:Name="backButton" Click="backButton_Click"  Background="Red" FontStyle="Italic" Content="Back"></Button>
-            <Button x:Name="quitButton" Click="quitButton_Click"  Background="Red" FontStyle="Italic" Content="Quit"></Button>
+            <Button x:ConnectionId='2' x:Name="backButton"                           Background="Red" FontStyle="Italic" Content="Back"></Button>
+            <Button x:ConnectionId='3' x:Name="quitButton"                           Background="Red" FontStyle="Italic" Content="Quit"></Button>
         </StackPanel>
        
             <Grid  Margin="100,150,50,100">
             <ScrollViewer>
-                <StackPanel x:Name="aboutStack">
+                <StackPanel x:ConnectionId='1' x:Name="aboutStack">
 
                     <TextBlock TextWrapping="Wrap" FontStyle="Italic" Text="Welcome to the Ghost hunt game."/>
 
@@ -59,3 +59,4 @@
 
     </Grid>
 </Page>
+

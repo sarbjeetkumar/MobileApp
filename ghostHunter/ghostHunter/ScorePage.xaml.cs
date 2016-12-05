@@ -25,6 +25,14 @@ namespace ghostHunter
         public ScorePage()
         {
             this.InitializeComponent();
+            //var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            //Object value = localSettings.Values["exampleSetting"];
+
         }
+
+
+
+     
+        //convert value to String ....
     }
 }

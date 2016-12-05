@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,17 @@ namespace ghostHunter
         public About()
         {
             this.InitializeComponent();
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void quitButton_Click(object sender, RoutedEventArgs e)
+        {
+            //this.Frame.Navigate(typeof(About));
+            CoreApplication.Exit();
         }
     }
 }

@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Threading;
+using Windows.UI.Popups;
+using Windows.ApplicationModel.Core;
 
 
 
@@ -47,7 +49,9 @@ namespace ghostHunter
         private void Timer_Tick(object sender, object e)
         {
             callCreateGhost();
+            init();
             //throw new NotImplementedException();
+
         }
 
         public static GreenGhost gGhost = new GreenGhost();
@@ -88,11 +92,31 @@ namespace ghostHunter
 
 
         //create a method which call a create ghost fucntion after every 2 seconds 
-        public void init()
+        public  void init()
         {
             //check score and do changes in game
             //check for how many user missed 
             //decide to continue or game over 
+
+            if(score == 30)
+            {
+                minimumGhosts = 2;
+                maximumGhosts = 4;
+                
+            }
+
+            if(score == 50)
+            {
+                minimumGhosts = 3;
+                maximumGhosts = 5;
+            }
+
+            if(score > 60 || countGhosts > 35)
+            {
+                //do something  
+                
+                this.Frame.Navigate(typeof(ScorePage));
+            }
            
 
 
@@ -148,6 +172,12 @@ namespace ghostHunter
 
             countGhosts = countGhosts + 1;
             tblLife.Text = "Remaning Life  " + countGhosts.ToString();
+
+            //calculate the remaining life
+
+
+
+
         }
         
 
@@ -252,7 +282,7 @@ namespace ghostHunter
         public void updateStage()
         {
             //do some stuff to update the score 
-             
+            //tblStage.Text = ""+             
         }
 
 
