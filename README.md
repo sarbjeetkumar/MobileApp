@@ -1,6 +1,6 @@
 # MobileApp
 
-## A project for Mobile App Year 4, at GMIT Galway.
+###A project for Mobile App Year 4, at GMIT Galway.
 
 ### It's a UWP (Universal windows app ) 
 
